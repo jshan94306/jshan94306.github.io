@@ -57,7 +57,13 @@ h1.has-background,h2.has-background,h3.has-background,h4.has-background,h5.has-b
 .wp-block-spacer{clear:both}
 </style>
  <style>
-    /* Remove default indentation for dl, dt, and dd */
+ /* Style checkmark */
+ dt::before {
+      content: "\2713"; /* Unicode character for checkmark */
+      display: inline-block;
+      margin-right: 5px; /* Adjust spacing between checkmark and term */
+    }
+	  /* Remove default indentation for dl, dt, and dd */ 
     dl {
       margin: 0;
       padding: 0;
