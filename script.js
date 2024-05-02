@@ -1,7 +1,5 @@
 
 
-
-
 <!-- The following works but won't show Show less button.    -->
 
 document.addEventListener('DOMContentLoaded', function() {
