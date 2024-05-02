@@ -305,20 +305,6 @@ ol,ul{padding-left: var(--wp--preset--spacing--10);}
 <h2> <u>  <a href="Introduction" target="_blank">About Us</a>  </u> </h2>
 </div>	
 
-<!-- <div class="expandable-content">
-    <a href="#" class="toggle-link">Introduction</a>
-    <div class="full-content" style="display: none;">
-        <p>	
-	Welcome to visit Insightful-Tech! We are an AI venture, located in Palo Alto, the center of Silcon Valley. We specialize in delivering cutting-edge Data Science (DS), Machine Learning (ML), 
-	and Artificial Intelligence (AI) solutions tailored to diverse industries. 
-	Our core focus lies in crafting data-driven analytical strategies  to tackle intricate business challenges.
-       
-        </p>
-    </div>
-</div>
-	-->
-
-
 	Welcome to visit Insightful-Tech! We are an AI venture, located in Palo Alto, the center of Silcon Valley. We specialize in delivering cutting-edge Data Science (DS), Machine Learning (ML), 
 	and Artificial Intelligence (AI) solutions tailored to diverse industries. 
 	Our core focus lies in crafting data-driven analytical strategies  to tackle intricate business challenges.
@@ -347,8 +333,26 @@ ol,ul{padding-left: var(--wp--preset--spacing--10);}
 		      <li> Consulting </li>
 		     <li>  Solution Architecture and Development </li>
 	 </ol>	    
-	<a href="#" class="toggle-link">Show more</a></p>
-    </div>	 
+	<a href="#" class="toggle-link">Show more</a>
+   </p>
+    </div>	
+
+<style>
+  /* Define a counter */
+  dl {
+    counter-reset: item;
+  }
+  dt {
+    /* Increment the counter for each <dt> */
+    counter-increment: item;
+  }
+  dt::before {
+    /* Display the counter value before each <dt> */
+    content: counter(item) ". ";
+  }
+</style>
+
+	 
 <div class="full-content" style="display: none;">
 <p> 
  <dl>
