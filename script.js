@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var fullContent = expandableContent.querySelector('.full-content');
             expandableContent.classList.toggle('expanded');
             fullContent.style.display = expandableContent.classList.contains('expanded') ? 'block' : 'none';
-            var text = this.innerText === 'Show more' ? 'Show less' : 'Show more';
+            var text = this.innerText === 'Show More' ? 'Show Less' : 'Show More';
             this.innerText = text;
         });
     });
