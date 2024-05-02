@@ -29,8 +29,23 @@
         margin: 0; /* Remove default margin */
 	margin-left: 20px; /* Add margin to the left of the title */
 	margin-right: 20px; /* Add margin to the left of the title */ 
-    }
+    }	  
   </style>
+	<style>
+  /* Define a counter */
+  dl {
+    counter-reset: item;
+  }
+  dt {
+    /* Increment the counter for each <dt> */
+    counter-increment: item;
+  }
+  dt::before {
+    /* Display the counter value before each <dt> */
+    content: counter(item) ". ";
+  }
+</style>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> About Insightful-Tech</title>
