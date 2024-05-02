@@ -38,7 +38,7 @@
 });   -->
 
 
-document.addEventListener('DOMContentLoaded', function() {
+<!-- document.addEventListener('DOMContentLoaded', function() {
     var toggleLinks = document.querySelectorAll('.toggle-link');
     toggleLinks.forEach(function(toggleLink) {
         toggleLink.addEventListener('click', function(e) {
@@ -55,13 +55,13 @@ document.addEventListener('DOMContentLoaded', function() {
             this.innerText = text;
         });
     });
-}); 
+});   -->
 
 
 
 
 <!-- The following works but won't show Show less button.    -->
-<!--
+
 document.addEventListener('DOMContentLoaded', function() {
     var toggleLinks = document.querySelectorAll('.toggle-link');
     toggleLinks.forEach(function(toggleLink) {
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
             this.innerText = text;
         });
     });
-});    -->
+});    
 
 
 
