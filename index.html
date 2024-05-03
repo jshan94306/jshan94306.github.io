@@ -305,26 +305,33 @@ ol,ul{padding-left: var(--wp--preset--spacing--10);}
 	<div class="horizontal-line"></div>
 <h2> <u>  <a href="Introduction" target="_blank">About Us</a>  </u> </h2>
 </div>	
-<p>	
+	<p>	
 	Welcome to visit Insightful-Tech. We are an AI venture, located in the center of Silcon Valley. We specialize in delivering cutting-edge Data Science (DS), Machine Learning (ML), 
 	and Artificial Intelligence (AI) solutions tailored to diverse industries. 
-	Our core focus lies in crafting data-driven analytical strategies  to tackle intricate business challenges.  1-2-3-4-5.
-</p>	
-<br>	
+	Our core focus lies in crafting data-driven analytical strategies  to tackle intricate business challenges.  </p> <br>	
 
 <div class="centered-header">
 <h2> <u> <a href="Expertise" target="_blank" > Our Expertise </a> </u>  </h2>
 </div>
-<p>	
-   At Insightful-Tech, we excel in a range of technical areas, providing comprehensive solutions to address your specific needs, with the following as
-	a sample list.
-	</p>	
-	<br>
-	
+  <p>  At Insightful-Tech, we excel in a range of technical areas, providing comprehensive solutions to address your specific needs, with the following as
+	a sample list. </p> <br>
+<!--  The working tempolate
+
+ <div class="expandable-content"> 
+   <div class="default-content">
+       <p> This is the default content.</p> 
+       <a href="#" class="toggle-link">Show more </a>
+   </div>
+   <div class="full-content" style="display: none;"> 
+       <p> This is the full content.</p> 
+       <a href="#" class="toggle-link show-less-button">Show less</a>   
+   </div>
+</div>
+
+-->  
  <div class="expandable-content"> 
    <div class="default-content">  
-	<p>
-	<ol>
+	<p> <ol>
 	<li> Data Analysis & Modeling </li>
 		      <li> Forecasting </li>
 		      <li>  Detection </li>
@@ -333,11 +340,10 @@ ol,ul{padding-left: var(--wp--preset--spacing--10);}
 		      <li>  User Privacy Solution </li>
 		      <li> Consulting </li>
 		     <li>  Solution Architecture and Development. </li>
-	 </ol>	    
-	<a href="#" class="toggle-link">Show more</a>
-   </p>
-    </div>	
-
+	 </ol>	  </p>
+	 <a href="#" class="toggle-link">Show more </a>
+   </div>
+	
 <style>
   /* Define a counter */
   dl {
@@ -351,10 +357,11 @@ ol,ul{padding-left: var(--wp--preset--spacing--10);}
     /* Display the counter value before each <dt> */
     content: counter(item) ". ";
   }
-</style>	 
-<div class="full-content" style="display: none;">
-<p> 
- <dl>
+</style>
+
+
+  <div class="full-content" style="display: none;"> 
+ <p> <dl>
   <dt> Data Analysis & Modeling: </dt> <dd> Harness the power of your data with our cutting-edge modeling skills to extract actionable insights and make informed decisions that drive business growth. </dd>
 	<br>
   <dt> Forecasting: </dt> <dd> Utilize advanced predictive models to anticipate future trends and outcomes, 
@@ -378,9 +385,9 @@ ol,ul{padding-left: var(--wp--preset--spacing--10);}
   <dt> Solution Architecture and Development:  </dt> <dd>  From conception to implementation, we provide end-to-end solution architecture and development services 
 	to bring your vision to life. </dd>
 	<br>
-</dl>
- </p>
- </div>
+   </dl> </p>
+   <a href="#" class="toggle-link show-less-button">Show less</a>   
+   </div>
  </div>
 	 
 <div class="centered-header">
@@ -593,6 +600,6 @@ class="has-small-font-size wp-block-navigation-item wp-block-navigation-link"><a
 	
 </script>
 
-<script src="script.js"></script>
+<script src="script0.js"></script>
 
 </body></html>
