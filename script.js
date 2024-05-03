@@ -1,5 +1,3 @@
->
-
 
 document.addEventListener('DOMContentLoaded', function() {
     var toggleLinks = document.querySelectorAll('.toggle-link');
