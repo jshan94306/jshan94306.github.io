@@ -73,7 +73,7 @@ when the expandable content is collapsed. Here's the updated JavaScript code */
 /* 4. It sounds like the issue might be with how the "Show less" button is being handled in the JavaScript code. Let's modify the code to ensure that the "Show less" 
 button remains visible after expanding the content. Here's the updated JavaScript code: */
 
- document.addEventListener('DOMContentLoaded', function() {
+/* document.addEventListener('DOMContentLoaded', function() {
     var toggleLinks = document.querySelectorAll('.toggle-link');
     toggleLinks.forEach(function(toggleLink) {
         toggleLink.addEventListener('click', function(e) {
@@ -90,12 +90,12 @@ button remains visible after expanding the content. Here's the updated JavaScrip
             this.innerText = text;
         });
     });
-});  
+});  */
 
 /* 5. It seems like there might be a logical issue in the code that's preventing the "Show more" button from working after clicking "Show less". 
 Let's adjust the JavaScript code to ensure that both buttons work correctly. Here's the updated code. */
 
-/* document.addEventListener('DOMContentLoaded', function() {
+ document.addEventListener('DOMContentLoaded', function() {
     var toggleLinks = document.querySelectorAll('.toggle-link');
     toggleLinks.forEach(function(toggleLink) {
         toggleLink.addEventListener('click', function(e) {
@@ -111,7 +111,7 @@ Let's adjust the JavaScript code to ensure that both buttons work correctly. Her
             var text = isExpanded ? 'Show less' : 'Show more';
             this.innerText = text;
         });
-    });  */
+    });  
 });
 
 
