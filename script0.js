@@ -117,7 +117,7 @@ Let's adjust the JavaScript code to ensure that both buttons work correctly. Her
 Let's adjust the JavaScript code to ensure that the "Show less" button is 
 displayed when the content is expanded and hidden when the content is collapsed. Here's the updated code: */
 
-document.addEventListener('DOMContentLoaded', function() {
+/* document.addEventListener('DOMContentLoaded', function() {
     var toggleLinks = document.querySelectorAll('.toggle-link');
     toggleLinks.forEach(function(toggleLink) {
         toggleLink.addEventListener('click', function(e) {
@@ -134,7 +134,29 @@ document.addEventListener('DOMContentLoaded', function() {
             this.innerText = text;
         });
     });
+});  */
+
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleLinks = document.querySelectorAll('.toggle-link');
+    toggleLinks.forEach(function(toggleLink) {
+        toggleLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            var expandableContent = this.closest('.expandable-content');
+            var defaultContent = expandableContent.querySelector('.default-content');
+            var fullContent = expandableContent.querySelector('.full-content');
+            
+            var isExpanded = expandableContent.classList.toggle('expanded');
+            fullContent.style.display = isExpanded ? 'block' : 'none';
+            defaultContent.style.display = isExpanded ? 'none' : 'block';
+            
+            var showLessButton = expandableContent.querySelector('.show-less-button');
+            if (showLessButton) {
+                showLessButton.style.display = isExpanded ? 'block' : 'none';
+            }
+        });
+    });
 });
+
 
 
 
