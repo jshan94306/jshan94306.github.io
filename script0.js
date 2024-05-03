@@ -157,6 +157,27 @@ displayed when the content is expanded and hidden when the content is collapsed.
     });
 });  */
 
+/* document.addEventListener('DOMContentLoaded', function() {
+    var toggleLinks = document.querySelectorAll('.toggle-link');
+    toggleLinks.forEach(function(toggleLink) {
+        toggleLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            var expandableContent = this.closest('.expandable-content');
+            var defaultContent = expandableContent.querySelector('.default-content');
+            var fullContent = expandableContent.querySelector('.full-content');
+            
+            var isExpanded = expandableContent.classList.toggle('expanded');
+            fullContent.style.display = isExpanded ? 'block' : 'none';
+            defaultContent.style.display = isExpanded ? 'none' : 'block';
+            
+            var showLessButton = expandableContent.querySelector('.show-less-button');
+            if (showLessButton) {
+                showLessButton.style.display = isExpanded ? 'block' : 'none';
+            }
+        });
+    });
+}); */
+
 document.addEventListener('DOMContentLoaded', function() {
     var toggleLinks = document.querySelectorAll('.toggle-link');
     toggleLinks.forEach(function(toggleLink) {
@@ -177,7 +198,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
 
 
 
