@@ -14,3 +14,8 @@
 .expandable-content.expanded .full-content {
     display: block;
 }
+
+.show-less-button {
+    display: none; /* Hide the button by default */
+}
+
