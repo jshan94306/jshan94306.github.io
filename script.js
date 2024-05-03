@@ -1,7 +1,7 @@
-/* To eliminate the content of the default part when clicking "Show more" to see the expanded content, 
+/* 1. To eliminate the content of the default part when clicking "Show more" to see the expanded content, 
 you can simply hide the default content. Here's how you can modify the JavaScript to achieve this. */
 
-document.addEventListener('DOMContentLoaded', function() {
+/* document.addEventListener('DOMContentLoaded', function() {
     var toggleLinks = document.querySelectorAll('.toggle-link');
     toggleLinks.forEach(function(toggleLink) {
         toggleLink.addEventListener('click', function(e) {
@@ -22,13 +22,13 @@ document.addEventListener('DOMContentLoaded', function() {
             this.innerText = text;
         });
     });
-});
+});  */
 
-/* It looks like the issue might be with how the default content is being displayed after clicking "Show less". Let's adjust the JavaScript to ensure that the default content is shown 
+/* 2. It looks like the issue might be with how the default content is being displayed after clicking "Show less". Let's adjust the JavaScript to ensure that the default content is shown 
 when the expandable content is collapsed. Here's the updated JavaScript code */
 
 
-/* document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
     var toggleLinks = document.querySelectorAll('.toggle-link');
     toggleLinks.forEach(function(toggleLink) {
         toggleLink.addEventListener('click', function(e) {
@@ -44,10 +44,10 @@ when the expandable content is collapsed. Here's the updated JavaScript code */
             this.innerText = text;
         });
     });
-});  */
+});  
 
 
-/* Let's simplify the logic a bit to ensure that the default content is displayed when the expandable content is collapsed. We can directly set the display of the default 
+/* 3. Let's simplify the logic a bit to ensure that the default content is displayed when the expandable content is collapsed. We can directly set the display of the default 
     content to 'block' when the expandable content is not expanded. Here's the updated JavaScript. */
 
 /* document.addEventListener('DOMContentLoaded', function() {
@@ -70,7 +70,7 @@ when the expandable content is collapsed. Here's the updated JavaScript code */
 });  */
 
 
-/* It sounds like the issue might be with how the "Show less" button is being handled in the JavaScript code. Let's modify the code to ensure that the "Show less" 
+/* 4. It sounds like the issue might be with how the "Show less" button is being handled in the JavaScript code. Let's modify the code to ensure that the "Show less" 
 button remains visible after expanding the content. Here's the updated JavaScript code: */
 
 /* document.addEventListener('DOMContentLoaded', function() {
@@ -92,7 +92,7 @@ button remains visible after expanding the content. Here's the updated JavaScrip
     });
 });  */
 
-/* It seems like there might be a logical issue in the code that's preventing the "Show more" button from working after clicking "Show less". 
+/* 5. It seems like there might be a logical issue in the code that's preventing the "Show more" button from working after clicking "Show less". 
 Let's adjust the JavaScript code to ensure that both buttons work correctly. Here's the updated code. */
 
 /* document.addEventListener('DOMContentLoaded', function() {
