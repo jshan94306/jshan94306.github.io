@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "insightful-tech.com",
+  "Id": "9264a71d-f0bc-4150-8313-f03403587b15"
+}
